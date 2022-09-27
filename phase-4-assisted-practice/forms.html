@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <style>
+      .required::after {
+        content: "*";
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form
+        class="w-50 mx-auto mt-4 border border-2 rounded-5 border-dark border-opacity-50 p-3 mb-2" novalidate
+      >
+        <p class="h1 text-center text-inf mb-3">Sell Car</p>
+        <div class="mb-3">
+          <label class="form-label required" for="name">Name</label>
+          <input
+            class="form-control"
+            id="name"
+            type="text"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label required" for="email">Email address</label>
+          <input
+            class="form-control"
+            id="email"
+            type="email"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label required" for="file"
+            >Upload Aadhaar File</label
+          >
+          <input
+            class="form-control"
+            id="aadhaar-file"
+            type="file"
+            autocomplete="off"
+            required
+          />
+          <div class="form-text" id="aadhaar-help" for="file">
+            file size should not exceed 1MB
+          </div>
+        </div>
+        <div class="mb-3 input-group">
+            <label class="form-label mx-2">Aadhaar Number</label>
+            <input class="form-control" type="text" pattern="“^[2-9]{1}[0-9]{3}\\s[0-9]{4}\\s[0-9]{4}$”">
+            <button class="input-group-text">validate</button>
+        </div>
+        <div class="mb-3">
+          <label class="form-label required" for="file"
+            >Upload Car Images</label
+          >
+          <input
+            class="form-control"
+            id="car-file"
+            type="file"
+            autocomplete="off"
+            multiple
+            required
+          />
+          <div class="form-text" id="car-image-help" for="car-file">
+            files size should not exceed 2MB
+          </div>
+        </div>
+        <div>
+          <div class="form-label" id="choose">select your car</div>
+          <select class="form-select mb-3">
+            <option value="">Choose</option>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lamborgini">Lamborgini</option>
+            <div class="form-text" for="choose">We accept only these cars</div>
+          </select>
+        </div>
+        <p>select the defect part if any</p>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            id="engine"
+            type="checkbox"
+            value="engine"
+          />
+          <label class="form-check-label" for="engine">Engine</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            id="body"
+            type="checkbox"
+            value="body"
+          />
+          
+          <label class="form-check-label" for="engine">Body</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            id="wheel"
+            type="checkbox"
+            value="wheel"
+          />
+          <label class="form-check-label" for="engine">Wheel</label>
+        </div>
+        <div class="mt-5">
+          <input class="btn btn-warning" id="submit-btn" type="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
