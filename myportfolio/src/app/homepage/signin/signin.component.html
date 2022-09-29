@@ -1,0 +1,46 @@
+<div>
+  <div class="jumbotron" style="margin: 45px">
+    <div class="disp-msg text-center bg-success w-50 mx-auto"></div>
+    <h2 style="text-align: center; padding-top: 5%">Login</h2>
+    <p style="text-align: center">
+      Enter the registered E-mail address and the password!
+    </p>
+    <form>
+      <div class="container">
+        <p style="text-align: center; padding: 20px">
+          E-mail
+          <input
+            type="text"
+            name="email"
+            placeholder="Email address"
+            email
+            required
+            style="padding-right: 60px; margin-left: 80px"
+            [(ngModel)]="email"
+          />
+        </p>
+      </div>
+      <div class="container">
+        <p style="text-align: center">
+          Password
+          <input
+            type="text"
+            name="email"
+            placeholder="Password"
+            required
+            style="padding-right: 60px; margin-left: 55px; margin-bottom: 20px"
+            [(ngModel)]="password"
+          />
+          <br />
+          <button
+            class="btn btn-primary"
+            style="margin-top: 20px"
+            (click)="onSubmit()"
+          >
+            Register
+          </button>
+        </p>
+      </div>
+    </form>
+  </div>
+</div>
