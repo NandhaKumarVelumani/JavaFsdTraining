@@ -1,0 +1,32 @@
+{
+  "admin": [
+    {
+      "email": "xyz@abc.com",
+      "password": "xyz",
+      "id": 1
+    }
+  ],
+  "employees": [
+    {
+      "id": 6,
+      "employee_name": "Surya",
+      "employee_email": "surya@gmail.com",
+      "employee_salary": "50000",
+      "employee_age": "27"
+    },
+    {
+      "id": 10,
+      "employee_name": "Anup",
+      "employee_email": "anup@gmail.com",
+      "employee_salary": "20000",
+      "employee_age": "40"
+    },
+    {
+      "id": 5,
+      "employee_name": "Vinay",
+      "employee_email": "vinay@gmail.com",
+      "employee_salary": "40000",
+      "employee_age": "26"
+    }
+  ]
+}
